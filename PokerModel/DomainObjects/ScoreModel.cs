@@ -47,59 +47,43 @@ namespace PokerModel.DomainObjects
         private List<Card> sortedHand;
         private Dictionary<Faces, int> histogram;
 
-        public Hand(Card card1, Card card2, Card card3, Card card4, Card card5)
+        public void AddCard(Card newCard)
         {
-            Card[] cards = new Card[5];
-            cards[0] = card1;
-            cards[1] = card2;
-            cards[2] = card3;
-            cards[3] = card4;
-            cards[4] = card5;
+            if (histogram.ContainsKey(newCard.Face))
+            {
+                histogram[newCard.Face] += 1;
+            }
+            else
+            {
+                histogram.Add(newCard.Face, 1);
+            }
 
+            sortedHand.Add(newCard);
+            sortedHand = (from c in sortedHand orderby c.Face ascending select c).ToList<Card>();
+        }
+
+        public Hand()
+        {
             histogram = new Dictionary<Faces, int>();
-            histogram.Add(card1.Face, 1);
-
-            if (histogram.ContainsKey(card2.Face))
-            {
-                histogram[card2.Face] += 1;
-            }
-            else
-            {
-                histogram.Add(card2.Face, 1);
-            }
-
-            if (histogram.ContainsKey(card3.Face))
-            {
-                histogram[card3.Face] += 1;
-            }
-            else
-            {
-                histogram.Add(card3.Face, 1);
-            }
-            
-            if (histogram.ContainsKey(card4.Face))
-            {
-                histogram[card4.Face] += 1;
-            }
-            else
-            {
-                histogram.Add(card4.Face, 1);
-            } 
-            
-            if (histogram.ContainsKey(card5.Face))
-            {
-                histogram[card5.Face] += 1;
-            }
-            else
-            {
-                histogram.Add(card5.Face, 1);
-            }
-
-            sortedHand = (from c in cards orderby c.Face ascending select c).ToList<Card>();
+            sortedHand = new List<Card>();
         }
 
         public List<Card> Cards { get { return sortedHand; } }
         public Dictionary<Faces, int> Histogram { get { return histogram; } }
+
+        public Card? HighCard 
+        { 
+            get 
+            {
+                if (sortedHand.Count() > 0)
+                {
+                    return sortedHand.Last();
+                }
+
+                return null;
+            } 
+        }
+        
     }
     #endregion
     public class ScoreModel
