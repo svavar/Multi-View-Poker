@@ -1,4 +1,4 @@
-# RazorPoker
+# Multi-View Poker
 An experimental work-in-progress upload of code to calculate scores, manage holdings, deal hands and (possibly) 
 produce a working game at some point.
 
