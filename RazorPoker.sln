@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Web
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPoker", "RazorPoker\RazorPoker.csproj", "{9DFB8809-2D7E-49D0-873F-05B81F3094F7}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerModel", "PokerModel\PokerModel.csproj", "{81A3BE16-66F5-4DE3-98B6-E664F85363EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserAccountModel", "UserAccount\UserAccountModel.csproj", "{08EAE04A-9C5F-48D2-A797-1F43B481E5E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerWebService", "PokerWebService\PokerWebService.csproj", "{2886BAF8-055F-453C-B195-384FCA643326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerWebService.Test", "PokerWebService.Test\PokerWebService.Test.csproj", "{69DE18D1-EAF9-40A4-875E-CFA37B27F07A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{08EAE04A-9C5F-48D2-A797-1F43B481E5E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08EAE04A-9C5F-48D2-A797-1F43B481E5E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08EAE04A-9C5F-48D2-A797-1F43B481E5E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2886BAF8-055F-453C-B195-384FCA643326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2886BAF8-055F-453C-B195-384FCA643326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2886BAF8-055F-453C-B195-384FCA643326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2886BAF8-055F-453C-B195-384FCA643326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69DE18D1-EAF9-40A4-875E-CFA37B27F07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DE18D1-EAF9-40A4-875E-CFA37B27F07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DE18D1-EAF9-40A4-875E-CFA37B27F07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DE18D1-EAF9-40A4-875E-CFA37B27F07A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

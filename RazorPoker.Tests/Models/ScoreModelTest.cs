@@ -13,21 +13,21 @@ namespace RazorPoker.Tests.Models
         [TestMethod]
         public void StraightFlushTest()
         {
-            Hand straightFlush = new Hand();
+            PlayerHand straightFlush = new PlayerHand();
             straightFlush.AddCard(new Card(Suits.Spades, Faces.Ten));
             straightFlush.AddCard(new Card(Suits.Spades, Faces.Jack));
             straightFlush.AddCard(new Card(Suits.Spades, Faces.Queen));
             straightFlush.AddCard(new Card(Suits.Spades, Faces.King));
             straightFlush.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand straightNotFlush = new Hand();
+            PlayerHand straightNotFlush = new PlayerHand();
             straightNotFlush.AddCard(new Card(Suits.Spades, Faces.Ten));
             straightNotFlush.AddCard(new Card(Suits.Spades, Faces.Jack));
             straightNotFlush.AddCard(new Card(Suits.Diamonds, Faces.Queen));
             straightNotFlush.AddCard(new Card(Suits.Spades, Faces.King));
             straightNotFlush.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand flushNotStraight = new Hand();
+            PlayerHand flushNotStraight = new PlayerHand();
             flushNotStraight.AddCard(new Card(Suits.Spades, Faces.Ten));
             flushNotStraight.AddCard(new Card(Suits.Spades, Faces.Jack));
             flushNotStraight.AddCard(new Card(Suits.Spades, Faces.Four));
@@ -44,14 +44,14 @@ namespace RazorPoker.Tests.Models
         [TestMethod]
         public void ThreeOfAKindTest()
         {
-            Hand threeOfAKind = new Hand();
+            PlayerHand threeOfAKind = new PlayerHand();
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Clubs, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Hearts, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.King));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand twoPairs = new Hand();
+            PlayerHand twoPairs = new PlayerHand();
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Clubs, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Hearts, Faces.King));
@@ -68,21 +68,21 @@ namespace RazorPoker.Tests.Models
         [TestMethod]
         public void TwoPairTest()
         {
-            Hand threeOfAKind = new Hand();
+            PlayerHand threeOfAKind = new PlayerHand();
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Clubs, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Hearts, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.King));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand twoPairs = new Hand();
+            PlayerHand twoPairs = new PlayerHand();
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Clubs, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Hearts, Faces.King));
             twoPairs.AddCard(new Card(Suits.Spades, Faces.King));
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand onePair = new Hand();
+            PlayerHand onePair = new PlayerHand();
             onePair.AddCard(new Card(Suits.Spades, Faces.Ten));
             onePair.AddCard(new Card(Suits.Clubs, Faces.Ten));
             onePair.AddCard(new Card(Suits.Hearts, Faces.Eight));
@@ -99,21 +99,21 @@ namespace RazorPoker.Tests.Models
         [TestMethod]
         public void OnePairTest()
         {
-            Hand threeOfAKind = new Hand();
+            PlayerHand threeOfAKind = new PlayerHand();
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Clubs, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Hearts, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.King));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand twoPairs = new Hand();
+            PlayerHand twoPairs = new PlayerHand();
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Clubs, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Hearts, Faces.King));
             twoPairs.AddCard(new Card(Suits.Spades, Faces.King));
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand onePair = new Hand();
+            PlayerHand onePair = new PlayerHand();
             onePair.AddCard(new Card(Suits.Spades, Faces.Ten));
             onePair.AddCard(new Card(Suits.Clubs, Faces.Ten));
             onePair.AddCard(new Card(Suits.Hearts, Faces.Eight));
@@ -131,28 +131,28 @@ namespace RazorPoker.Tests.Models
         [TestMethod]
         public void FullHouseTest()
         {
-            Hand fullHouse = new Hand();
+            PlayerHand fullHouse = new PlayerHand();
             fullHouse.AddCard(new Card(Suits.Spades, Faces.Ten));
                     fullHouse.AddCard(new Card(Suits.Clubs, Faces.Ten));
                     fullHouse.AddCard(new Card(Suits.Hearts, Faces.Ten));
                     fullHouse.AddCard(new Card(Suits.Spades, Faces.King));
                     fullHouse.AddCard(new Card(Suits.Hearts, Faces.King));
 
-            Hand threeOfAKind = new Hand();
+            PlayerHand threeOfAKind = new PlayerHand();
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Clubs, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Hearts, Faces.Ten));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.King));
             threeOfAKind.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand twoPairs = new Hand();
+            PlayerHand twoPairs = new PlayerHand();
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Clubs, Faces.Ten));
             twoPairs.AddCard(new Card(Suits.Hearts, Faces.King));
             twoPairs.AddCard(new Card(Suits.Spades, Faces.King));
             twoPairs.AddCard(new Card(Suits.Spades, Faces.Ace));
 
-            Hand onePair = new Hand();
+            PlayerHand onePair = new PlayerHand();
             onePair.AddCard(new Card(Suits.Spades, Faces.Ten));
             onePair.AddCard(new Card(Suits.Clubs, Faces.Ten));
             onePair.AddCard(new Card(Suits.Hearts, Faces.Eight));

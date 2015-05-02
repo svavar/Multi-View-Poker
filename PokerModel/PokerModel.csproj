@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\IPokerController.cs" />
-    <Compile Include="DomainObjects\ScoreModel.cs" />
+    <Compile Include="DomainObjects\Card.cs" />
+    <Compile Include="DomainObjects\Player.cs" />
+    <Compile Include="DomainObjects\PlayerHand.cs" />
+    <Compile Include="DomainObjects\Hands.cs" />
+    <Compile Include="DomainObjects\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\TexasHoldemController.cs" />
   </ItemGroup>
